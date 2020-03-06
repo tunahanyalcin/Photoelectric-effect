@@ -1,0 +1,16 @@
+0.4
+0.6
+Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
+ FCN=0.112546 FROM MIGRAD    STATUS=CONVERGED      39 CALLS          40 TOTAL
+                     EDM=2.60671e-10    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a1          -6.35968e+00   1.41818e+00   3.13674e-04   3.03551e-05
+   2  b1           2.36561e+00   2.57223e-01   5.68914e-05   9.90465e-05
+ FCN=12.1519 FROM MIGRAD    STATUS=CONVERGED      65 CALLS          66 TOTAL
+                     EDM=2.43234e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2          -4.20262e-02   7.04874e-03   1.59967e-06  -7.60598e-01
+   2  b2          -1.60346e-01   1.24670e-02   2.82894e-06  -4.36292e-01
+

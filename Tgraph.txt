@@ -1,0 +1,22 @@
+{
+    double y,z;
+    cin >> y;
+    cin >> z;
+    f1= new TF1("f1","[0]*x+[1]",0,y);
+    f2= new TF1("f2","[0]*x+[1]",z,2);
+    f1->SetParNames("chi1","phi1");
+    f2->SetParNames("chi2","phi2");
+    h = new TGraphErrors("Datas/BlueGreen.txt");
+    h->SetTitle("V vs A Under Blue-Green Light;Voltage(V);Current(muA)");
+    h->SetMarkerStyle(7);
+    h->SetMarkerColor(kBlue);
+     
+    h->Draw("AP");
+    h->Fit("f1","R");
+ 
+    h->Fit("f2","R+");
+//  h->Draw("AP");
+     
+     
+     
+}

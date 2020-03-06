@@ -1,0 +1,27 @@
+#This is a python code
+#Here, we convert txt columns to lists and find the errors
+
+data = open("turquoise_data", "r")
+lst = []
+for line in data:
+    lst.append([ float(x) for x in line.split()])
+
+voltage = [x[0] for x in lst]
+current = [x[1] for x in lst]
+
+#print(voltage)
+'''for i in voltage:
+    if i < 0.400:
+        error = (i*0.003) + 0.004
+        error_new = round(error, 3)
+        print(error_new)
+    elif i > 0.400:
+        error = (i*0.005) + 0.003
+        error_new = round(error, 3)
+        print(error_new)'''
+
+print(current)
+for i in current:
+    error = (i*0.02) + 0.005
+    error_new = round(error, 3)
+    print(error_new)

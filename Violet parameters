@@ -1,0 +1,19 @@
+1.2
+1.5
+Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
+ FCN=30.8348 FROM MIGRAD    STATUS=CONVERGED      45 CALLS          46 TOTAL
+                     EDM=2.10244e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a1          -4.19670e+00   5.04212e-01   1.50243e-04  -6.69269e-03
+   2  b1           5.10572e+00   5.77753e-01   1.72162e-04  -4.87893e-03
+Warning in <Fit>: Abnormal termination of minimization.
+ FCN=0 FROM MIGRAD    STATUS=FAILED        102 CALLS         103 TOTAL
+                     EDM=339763    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  a2           0.00000e+00   5.33724e-30  -0.00000e+00   1.09212e+32
+   2  b2           0.00000e+00   1.41421e+00  -0.00000e+00   0.00000e+00
+root [2] Info in <TCanvas::Print>: file /home/tuna_yalcin/violet.png has been created
+
+
