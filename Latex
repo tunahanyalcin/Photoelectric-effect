@@ -1,0 +1,416 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[bottom=2.0cm,top=2.0cm,left=2.0cm,right=2.0cm]{geometry}
+\usepackage[english]{babel}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage{float}
+\restylefloat{table}
+\usepackage{hyperref}  %%%%
+\hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black} %%%%
+
+
+\begin{document}
+
+\begin{titlepage}
+
+	    \vspace{200pt}
+	    
+		\hspace{-10pt}\Large\textbf{   Boğaziçi University}\\
+         %%% You need to fix this
+        \Large\textbf{ Physics Department}\\
+        \Large\textbf{ Istanbul, Turkey}\\
+        \date{22 } %%Add the date
+      
+        
+        \vspace{120pt}
+    \begin{center}
+        \LARGE\underline{\textbf{ Photoelectric Effect }}
+        
+        \vspace{30pt}
+        \textbf{Abstract}
+        
+        \vspace{15pt}
+        
+        The purpose of the experiment is to verify the particle nature of light and determine the Planck’s constant. In the present experiment, a spectrograph was used to obtain a continuous spectrum from the light source. We then aligned the light of specific frequencies onto a photocell while measuring the current created by the electrons emitted from the cathode. Afterwards, we changed the retarding potential and recorded the corresponding current from a digital multimeter. We calculated the stopping potential for each frequency of light and formed a frequency vs stopping potential graph. Using this graph, we finally found Planck’s constant to be \begin{math} h = 5.36 x 10^{-34} +/- 6.08 x 10^{-34} \emph{Js} \end{math}, which is within \begin{math} 1.27\sigma \end{math} of the true value.
+        
+        \end{center}
+       
+        
+        \vspace{100pt}
+        
+       
+        \Large{Tunahan Yalçın} %Maybe put this in the middle?
+        
+    \begin{center}
+    
+     \vspace{\fill}
+        cover
+        
+    \end{center}
+        
+        
+        
+        
+	
+\end{titlepage}
+
+
+
+
+\newpage
+
+\Large\tableofcontents
+\thispagestyle{empty}
+             
+\newpage
+\pagenumbering{arabic}
+\large
+
+\section{Introduction}
+\subsection{History}
+    Although the main studies on the photoelectric effect and the quantization of light were conducted in the late 19th and early 20th century, the foundation of the photoelectric effect dates back to mid-19th century. The first known study was conducted by Alexandre Edmond Becquerel in 1839 while studying the effect of light on electrolytic cells, which led to the discovery of the photovoltaic effect. Even though his discovery was not equivalent to the photoelectric effect, his work showed a strong relationship between light and electronic properties of materials. After the Becquerel’ discovery, the main focus was on the practical applications of the photoelectric without understanding the fundamentals of it until 1887. \par
+	In 1887, Franck Hertz was studying on the photoelectric effect where he observed the production and reception of electromagnetic waves. In his studies, he used a coil with a spark gap where a spark would be observed upon detection of electromagnetic waves. In the light of his work, studies on the photoelectric and its properties increased dramatically. It was studied by many known scientists like J.J. Thomson, Max Planck until the explanation came from Albert Einstein in 1905.\par
+	After the groundbreaking theory of Einsten in his article "On a Heuristic Viewpoint Concerning the Production and Transformation of Light", many scientist focused on the proving the theory. Regarding the issue, in 1914, Robert Andrews Millikan showed Einstein’s prediction to be true by observing that the energy of the photoelectrons increase with increasing frequency and it is independent of the light intensity. This observation lead to Einstein winning a nobel prize for his works on the matter.
+
+
+
+\subsection{Theory}
+
+    The photoelectric effect is described as the emission of electrons from a material surface or within the material itself while illuminated by light. There has been many explanations to address the issue. First, Max Planck suggested that the light waves consist of small packets of energy, which is now called photons, which eliminate the problem of Ultra-Violet Catastrophe. Following his proposition, Einstein using the concept of quantized light and he proposed that the energy of each quantum of light carries an energy, E, accordingly with \emph{E = hf}. This assumption led him to predict the maximum energy of electrons to be
+    
+    \begin{equation}\label{1}
+        K_{max} = hf - \phi
+    \end{equation}
+    
+    where \begin{math} \phi \end{math} is the work function of the metal used to observe the photoelectric effect. In this formula, work function is a characteristic property of the metal which can be described as the minimum energy that a metal requires to emit an electron from its surface.. \par
+    
+    \begin{math} K_{max} \end{math} can be found by applying an inverse potential to the electrons, namely the stopping voltage \begin{math} V_{s} \end{math} where the current diminishes
+    
+    \begin{equation}\label{2}
+        K_{max} = qV_{s}
+    \end{equation}
+    
+    Putting this into \eqref{1} , we find that 
+    
+    \begin{equation}\label{3}
+        hf = qV_{s} + \phi
+    \end{equation}
+    
+\newpage
+    
+
+\section{Experiment}
+\subsection{Apparatus}
+\begin{itemize}
+    \item Mercury lamp with power supply
+    \item Spectrograph with a transmission grating
+    \item Photocell with housing.
+    \item Current Amplifier.
+    \item Moving Coil DC voltmeter for the current amplifier (0-3 V).
+    \item DC Voltmeter (0-3 V).
+    \item Power Supply (0-3 V)
+    \item Connecting Leads.
+\end{itemize}
+\subsection{Setup} 
+    \begingroup
+    \setlength{\intextsep}{2pt}
+    \setlength{\columnsep}{12pt}
+    \begin{wrapfigure}
+    \centering
+    \includegraphics[width=13cm]{Circuit.png}
+    
+    \caption{Figure 1: Drawing of the electrical instruments used in the experiment }\label{fig:fig1}
+    \end{wrapfigure}
+
+    \endgroup
+    
+     \begingroup
+    \setlength{\intextsep}{5pt}
+    \setlength{\columnsep}{15pt}
+    \begin{wrapfigure}
+    \centering
+    \includegraphics[width=16cm]{Layer 1.png}
+    \newline
+    \caption{Figure 2: Picture of the setup }\label{fig:fig2}
+    \end{wrapfigure}
+
+    \endgroup
+    
+    \vspace{20pt}
+    
+\subsection{How the setup works} %Find a better title!
+
+Mercury lamp in the photo emits light through its front hole, then the light is focused with the help of the lenses which later is reflected from the mirror (see Figure 2). The process of focusing is to decrease spreading out and avoiding striking to the anode. The reflected light then goes through the spectrograph which is used to align the desired color onto the cathode.\par
+	
+The photons strike the cathode and cause metal to emit electrons if the incoming photon energy is sufficient, i.e., it is higher than the work function of the metal. The emitting of the electrons produce a current which can be amplified by the current amplifier in the circuit. Current can be adjusted by changing the potential on the anode with the moving coil voltmeter. Due to the potential on the anode, emitted electrons lose energy and some fail to reach the anode which results in a decrease in the current
+
+    
+\newpage
+
+\subsection{Procedure}
+\begin{enumerate}
+    \item The power supplies are off and the voltage settings are at 0 before proceeding with the experiment
+    \item Before turning the power on, close the casing of the setup and turn off the lights since it may damage the photocell and may cause false negative results by reversing the current on the anode
+    \item The mercury lamp was connected to the power source and heated up.
+    \item The orientation of the grating was adjusted as the yellow light strikes the photocell
+    \item The current for 0V was noted and the voltage was increased by approximately 0.05V.
+    \item . The current was noted with each voltage, until current reaches 0. After reaching 0, other measurements were also noted as increasing the voltage (doğru mu?).
+    \item The steps 5-7 was repeated for green, turquoise, blue and violet.
+\end{enumerate}
+
+\section{Analysis and Calculations}
+Calculation of the errors in current and voltage were completed with the code (see Appendix). In the following section, the raw data (see appendix) was put into graphs and two line fits were made. In the graphs, each parameter could not be given but the code we used to draw the graphs are included in the appendix as well. Importantly, to clarify the errors, the current errors has been multiplied with 10.
+
+\begin{equation}
+    a_{1}V + b_{1} = I 
+\end{equation}
+
+\begin{equation}
+    a_{2}V + b_{2} = I 
+\end{equation}
+
+Also please note that the errors in current were multiplied with 10 in order to show the errors with better clarity
+
+    \vspace{20pt}
+    
+\begin{center}
+    
+ 
+    \begingroup
+    \setlength{\intextsep}{5pt}
+    \setlength{\columnsep}{20pt}
+    \begin{wrapfigure}
+    \centering
+    \includegraphics[width=9cm]{Yellow.png}
+    \newline
+    \caption{Figure 3: V, I measurements for Yellow light with fits }\label{fig:fig3}
+    \end{wrapfigure}
+
+    \endgroup
+    
+\newpage
+
+\begingroup
+    \setlength{\intextsep}{5pt}
+    \setlength{\columnsep}{20pt}
+    \begin{wrapfigure}
+    \centering
+    \includegraphics[width=9cm]{green.png}
+    \newline
+    \caption{Figure 4: V, I measurements for Green light with fits }\label{fig:fig4}
+    \end{wrapfigure}
+
+    \endgroup
+    
+\vspace{40pt}
+
+\begingroup
+    \setlength{\intextsep}{5pt}
+    \setlength{\columnsep}{20pt}
+    \begin{wrapfigure}
+    \centering
+    \includegraphics[width=9cm]{turquoise.png}
+    \newline
+    \caption{Figure 5: V, I measurements for Turquoise light with fits }\label{fig:fig5}
+    \end{wrapfigure}
+
+    \endgroup
+    
+    
+\vspace{40pt}
+
+\begingroup
+    \setlength{\intextsep}{5pt}
+    \setlength{\columnsep}{20pt}
+    \begin{wrapfigure}
+    \centering
+    \includegraphics[width=9cm]{blue.png}
+    \newline
+    \caption{Figure 6: V, I measurements for Blue light with fits }\label{fig:fig6}
+    \end{wrapfigure}
+
+    \endgroup
+    
+    
+\vspace{40pt}
+
+\begingroup
+    \setlength{\intextsep}{5pt}
+    \setlength{\columnsep}{20pt}
+    \begin{wrapfigure}
+    \centering
+    \includegraphics[width=9cm]{violet.png}
+    \newline
+    \caption{Figure 7: V, I measurements for Violet light with fits }\label{fig:fig7}
+    \end{wrapfigure}
+
+    \endgroup
+    
+\end{center}  
+
+To find \begin{math} V_{s} \end{math}, we can use our fit values of \begin{math} a_{1}, a_{2}, b_{1}, b_{2} \end{math} and find their intersections V = \begin{math} V_{s} \end{math} by using the following formula
+
+\begin{equation}\label{6}
+    V_{s}a_{1} + b_{1} = V_{s}a_{2} + b_{2}
+\end{equation}
+
+
+and we found \begin{math} \Delta V_{s} \end{math} by using error propagation which is given by
+
+\begin{equation}\label{7}
+    \Delta f(x_{i}) = \sqrt{\sum(\frac{\partial f}{\partial x_{i}}\Delta x_{i})^2}
+\end{equation}
+
+Equations \eqref{6} and \eqref{7} give us 
+
+\vspace{10pt}
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ Color & \begin{math} V_{s} \end{math} & \begin{math} \Delta V_{s} \end{math} \\ \hline
+ Yellow & 0.414 V & 0.880 \\ \hline
+ Green & 0.400 V & 0.568 \\ \hline
+ Turquoise & 0.573 V & 0.562 \\ \hline
+ Blue & 0.670 V & 0.678 \\ \hline
+ Violet & 1.217 V & 0.700 \\ \hline
+ \hline
+\end{tabular}
+\end{center}
+
+\vspace{20pt}
+
+In the experiment, the frequencies of colors were given to us as certain values which are
+
+\begin{center}
+    \begin{tabular}{|c|c|}
+     \hline
+      Color  & Frequency (\begin{math} e14 \end{math} Hz)\\ \hline \hline
+      Yellow   & 5.19 \\ \hline
+      Green   & 5.49 \\ \hline
+      Turquoise   & 6.08 \\ \hline
+      Blue   & 6.88 \\ \hline
+      Violet   & 7.41 \\ \hline
+    \end{tabular}
+\end{center}
+
+\newpage
+
+ \begin{math} V_{s} \end{math} and f were put in a graph with error bars and fitted a line.
+ 
+ \begin{center}
+     \begingroup
+    \setlength{\intextsep}{5pt}
+    \setlength{\columnsep}{20pt}
+    \begin{wrapfigure}
+    \centering
+    \includegraphics[width=11cm]{fvsv2.png}
+    \newline
+    \caption{Figure 8: frequency f vs stopping potential \begin{math} V_{s} \end{math} }\label{fig:fig8}
+    \end{wrapfigure}
+
+      \endgroup
+ \end{center}
+ 
+ \vspace{20pt}
+ 
+ The fit has the formula
+ \begin{center}
+     \begin{math} V_{s} \end{math} = p1.f + p0
+ \end{center}
+ where p1 is \begin{math} \frac{h}{q} \end{math} and p0 is \begin{math} \frac{-\phi}{q} \end{math},
+ q= \begin{math} 1.60*10^{-19} \end{math} \emph{coulomb}. Using these we get \newline
+ 
+ \vspace{5pt}
+ 
+ \begin{math}
+\frac{h}{q} = 3.35 x 10^{-15} +/- 3.80^{-15} \frac{\emph{Js}}{\emph{coulomb}} 
+\newline
+
+\vspace{5pt}
+
+\Rightarrow h = 5.36 x 10^{-34} +/- 6.08 x 10^{-34} \emph{Js} 
+\newline
+
+\end{math}
+
+\begin{math}
+ \frac{-\phi}{q} = -1.44 +/- 2.38
+ 
+ \vspace{5pt}
+ 
+\Rightarrow \phi = 0.230 +/- 0.380 \frac{\emph{J}}{\emph{coulomb}}
+ 
+\end{math}
+ 
+\newpage
+
+\section{Conclusion}
+The purpose of the experiment was to verify the quantum nature of light and to get the Planck's constant using the phenomenon of the Photoelectric effect. The data showed linear relationship between current and reverse voltage as discussed and shown in section 3.In addition, the data frequency of light vs stopping voltage also showed linear relationship. These results agree with Einstein's proposition. We calculated the Planck's constant to be 
+\begin{center}
+    \begin{math} h = 5.36 x 10^{-34} +/- 6.08 x 10^{-34} \emph{Js} \end{math}
+\end{center}
+Comparing this result with the known value for the Planck's constant,
+\begin{center}
+    \begin{math} h_{true} = 6.62 x 10^{-34} \emph{Js} 
+        \end{math}
+\end{center}
+
+
+\vspace{2pt}
+
+\begin{center}
+    \begin{math}
+     \huge\frac{|h_{true}-h|}{\Delta h} = \frac{6.63 - 5.36}{6.08} = 1.27
+    \end{math}
+\end{center}
+
+\vspace{2pt}
+
+\begin{center}
+    \begin{math}
+     \huge\frac{\Delta h}{h} = 113 \%
+    \end{math}
+\end{center}
+
+It can be concluded that this is a bad result since it contains a big uncertainty, despite the fact the known value is within \begin{math} 1.27\sigma, \end{math} \begin{math} \Delta h \end{math} is \begin{math} 113\% \end{math} of \emph{h}. The result can be improved by studying the following possible causes of error
+
+\begin{itemize}
+    \item Frequencies of light are taken to be absolute whereas the colors in the spectrum are not separated enough due to the small distance between target and spectrograph.
+    \item The frequencies of the colors used were not measured, but chosen with eye, hence there was no way of knowing the actual frequencies.
+    \item The target is rather sensitive to light but regardless one has to expose the target to unwanted light every time whilst changing the color. The target should be isolated from the environment more precisely.
+\end{itemize}
+
+
+\section{References}
+\begin{itemize}
+    \item The history of the Photoelectric effect, in \url{https://en.wikipedia.org/wiki/Photoelectric_effect#History}
+    \item Kenneth S. Krane-Modern Physics-Wiley (2012)
+    \item Advanced Physics Experiments, Erhan Gulmez, Bogazici University
+Publications, 1999, ISBN 975-518-129-6
+    \item Publications, 1999, ISBN 975-518-129-6
+Millikan's Paper
+\url{$https://journals.aps.org/pr/pdf/10.1103/PhysRev.7.355$}
+    \item R. A. Millikan, A Direct Photoelectric Determination of Planck's "h", Vol VII, No.3, Pages 355-388
+\end{itemize}
+
+
+
+\section{Appendix}
+\begin{itemize}
+     
+
+\item for Code, Raw Data, Calculations: \newline
+https://github.com/tunahanyalcin/Photoelectric-effect
+\item Constants used \newline
+\begin{math} h = 6.62 x 10^{-34} \emph{Js}  \end{math} \newline
+q= \begin{math} 1.60*10^{-19} \end{math} \emph{coulomb}
+\end{itemize}
+
+
+
+
+\end{document}
